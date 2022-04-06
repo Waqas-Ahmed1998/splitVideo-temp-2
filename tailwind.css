@@ -8,7 +8,7 @@
   }
 }
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: sans-serif;
 
 
 
@@ -23,14 +23,12 @@ body {
 }
 
 .subheading {
-  font-family: 'Roboto', sans-serif;
-/* font-family:  Helvetica, sans-serif; */
 
 
 
 }
 input {
-  font-family: sans-serif;
+
 }
 .heading {
   /* font-family: 'Libre Baskerville', serif; */
@@ -47,7 +45,7 @@ input {
 
 }
 .disclaimer {
-  font-family: 'Lato', sans-serif;
+
 
 
 }

@@ -527,10 +527,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 95%;
 }
 
-.w-\[80\%\] {
-  width: 80%;
-}
-
 .cursor-pointer {
   cursor: pointer;
 }
@@ -581,6 +577,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-width: 8px;
 }
 
+.border {
+  border-width: 1px;
+}
+
 .border-gray-300 {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
@@ -602,6 +602,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-\[\#239839\] {
   --tw-bg-opacity: 1;
   background-color: rgb(35 152 57 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#E43B2C\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(228 59 44 / var(--tw-bg-opacity));
 }
 
 .py-10 {
@@ -675,6 +680,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 500;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .text-\[\#2d2d2d\] {
   --tw-text-opacity: 1;
   color: rgb(45 45 45 / var(--tw-text-opacity));
@@ -690,9 +699,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-\[\#e43b2c\] {
+  --tw-text-opacity: 1;
+  color: rgb(228 59 44 / var(--tw-text-opacity));
+}
+
 .shadow-lg {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-sm {
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -711,7 +731,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: sans-serif;
   /* font-family: 'Vazirmatn', sans-serif; */
   /* font-family: 'Prompt', sans-serif; */
   /* font-family: 'Inter', sans-serif; */
@@ -721,12 +741,9 @@ body {
 }
 
 .subheading {
-  font-family: 'Roboto', sans-serif;
-  /* font-family:  Helvetica, sans-serif; */
 }
 
 input {
-  font-family: sans-serif;
 }
 
 .heading {
@@ -737,7 +754,6 @@ input {
 }
 
 .disclaimer {
-  font-family: 'Lato', sans-serif;
 }
 
 .rgba {
@@ -770,6 +786,16 @@ font-family: 'Vazirmatn', sans-serif;*/
 .hover\:bg-\[\#447d4f\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(68 125 79 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#E43B2C\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(228 59 44 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#c3675e\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(195 103 94 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-gradient-to-l:hover {
@@ -815,6 +841,14 @@ font-family: 'Vazirmatn', sans-serif;*/
     width: 80%;
   }
 
+  .md\:w-\[70\%\] {
+    width: 70%;
+  }
+
+  .md\:w-\[75\%\] {
+    width: 75%;
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -851,6 +885,16 @@ font-family: 'Vazirmatn', sans-serif;*/
   .md\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 
   .md\:leading-\[1\.2\] {
