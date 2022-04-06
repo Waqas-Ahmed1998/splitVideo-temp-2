@@ -595,6 +595,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(239 239 239 / var(--tw-bg-opacity));
 }
 
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
 .bg-transparent {
   background-color: transparent;
 }
@@ -602,6 +607,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-\[\#FFE300\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 227 0 / var(--tw-bg-opacity));
+}
+
+.bg-gray-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
 }
 
 .py-10 {
@@ -815,6 +825,18 @@ font-family: 'Vazirmatn', sans-serif;*/
     width: fit-content;
   }
 
+  .md\:max-w-5xl {
+    max-width: 64rem;
+  }
+
+  .md\:max-w-6xl {
+    max-width: 72rem;
+  }
+
+  .md\:max-w-\[1120px\] {
+    max-width: 1120px;
+  }
+
   @-webkit-keyframes wiggle {
     0%, 100% {
       transform: rotate(-3deg);
@@ -895,7 +917,11 @@ font-family: 'Vazirmatn', sans-serif;*/
 }
 
 @media (min-width: 1024px) {
-  .lg\:max-w-7xl {
-    max-width: 80rem;
+  .lg\:max-w-6xl {
+    max-width: 72rem;
+  }
+
+  .lg\:max-w-5xl {
+    max-width: 64rem;
   }
 }
