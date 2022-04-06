@@ -8,8 +8,8 @@
   }
 }
 body {
+  font-family: 'Source Sans Pro', sans-serif;
 
-font-family: sans-serif;
 
 /* font-family: 'Vazirmatn', sans-serif; */
 
@@ -28,7 +28,7 @@ font-family: sans-serif;
 
 }
 .heading {
-  font-family: 'Libre Baskerville', serif;
+  /* font-family: 'Libre Baskerville', serif; */
 
 
 
@@ -67,5 +67,6 @@ font-family: 'Prompt', sans-serif;
 font-family: 'Roboto', sans-serif;
 font-family: 'Rubik Bubbles', cursive;
 font-family: 'Send Flowers', cursive;
+font-family: 'Source Sans Pro', sans-serif;
 font-family: 'Tajawal', sans-serif;
 font-family: 'Vazirmatn', sans-serif;*/
