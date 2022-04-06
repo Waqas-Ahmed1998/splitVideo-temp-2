@@ -815,8 +815,8 @@ font-family: 'Vazirmatn', sans-serif;*/
     width: fit-content;
   }
 
-  .md\:max-w-\[1140px\] {
-    max-width: 1140px;
+  .md\:max-w-\[1120px\] {
+    max-width: 1120px;
   }
 
   @-webkit-keyframes wiggle {
