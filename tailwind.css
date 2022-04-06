@@ -8,7 +8,8 @@
   }
 }
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+
 
 
 /* font-family: 'Vazirmatn', sans-serif; */
@@ -22,10 +23,14 @@ body {
 }
 
 .subheading {
-  /* font-family: 'Inter', sans-serif; */
+  font-family: 'Roboto', sans-serif;
+/* font-family:  Helvetica, sans-serif; */
 
 
 
+}
+input {
+  font-family: sans-serif;
 }
 .heading {
   /* font-family: 'Libre Baskerville', serif; */
