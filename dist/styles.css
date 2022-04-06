@@ -517,8 +517,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 100vh;
 }
 
-.w-\[90\%\] {
-  width: 90%;
+.w-full {
+  width: 100%;
 }
 
 .w-fit {
@@ -527,12 +527,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: fit-content;
 }
 
-.w-full {
-  width: 100%;
+.w-\[95\%\] {
+  width: 95%;
 }
 
-.max-w-\[30rem\] {
-  max-width: 30rem;
+.w-\[90\%\] {
+  width: 90%;
 }
 
 .cursor-pointer {
@@ -551,16 +551,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: center;
 }
 
-.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
-  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
 .overflow-x-hidden {
@@ -588,33 +594,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: transparent;
 }
 
-.bg-\[\#0f0c0d\] {
+.bg-\[\#2D2D2D\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(15 12 13 / var(--tw-bg-opacity));
+  background-color: rgb(45 45 45 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#161113\] {
+.bg-\[\#000000\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(22 17 19 / var(--tw-bg-opacity));
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-transparent {
   background-color: transparent;
 }
 
-.bg-gray-50 {
+.bg-\[\#E75244\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+  background-color: rgb(231 82 68 / var(--tw-bg-opacity));
 }
 
-.bg-red-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
-}
-
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .px-1 {
@@ -625,16 +626,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
-}
-
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-.py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
 }
 
 .py-3 {
@@ -654,45 +645,35 @@ Ensure the default browser behavior of the `hidden` attribute.
   vertical-align: baseline;
 }
 
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-\[0\.7rem\] {
   font-size: 0.7rem;
 }
 
-.font-semibold {
-  font-weight: 600;
-}
-
 .font-medium {
   font-weight: 500;
 }
 
-.tracking-wide {
-  letter-spacing: 0.025em;
+.font-bold {
+  font-weight: 700;
 }
 
-.text-gray-200 {
-  --tw-text-opacity: 1;
-  color: rgb(229 231 235 / var(--tw-text-opacity));
+.font-semibold {
+  font-weight: 600;
 }
 
 .text-\[\#ffffff\] {
@@ -700,19 +681,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-gray-100 {
-  --tw-text-opacity: 1;
-  color: rgb(243 244 246 / var(--tw-text-opacity));
-}
-
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-gray-50 {
-  --tw-text-opacity: 1;
-  color: rgb(249 250 251 / var(--tw-text-opacity));
 }
 
 .shadow-lg {
@@ -736,7 +707,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 body {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: sans-serif;
   /* font-family: 'Vazirmatn', sans-serif; */
   /* font-family: 'Prompt', sans-serif; */
   /* font-family: 'Inter', sans-serif; */
@@ -747,20 +718,17 @@ body {
 
 .subheading {
   /* font-family: 'Inter', sans-serif; */
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .heading {
-  /* font-family: 'Roboto', sans-serif; */
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Libre Baskerville', serif;
 }
 
 .call{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .disclaimer {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 .rgba {
@@ -775,6 +743,8 @@ font-family: 'Changa', sans-serif;
 font-family: 'Dancing Script', cursive;
 font-family: 'Grape Nuts', cursive;
 font-family: 'Inter', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Libre Baskerville', serif;
 font-family: 'Lobster', cursive;
 font-family: 'Merriweather', serif;
 font-family: 'Montserrat', sans-serif;
@@ -785,7 +755,12 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Rubik Bubbles', cursive;
 font-family: 'Send Flowers', cursive;
 font-family: 'Tajawal', sans-serif;
-font-family: 'Vazirmatn', sans-serif; */
+font-family: 'Vazirmatn', sans-serif;*/
+
+.hover\:bg-\[\#b8716b\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(184 113 107 / var(--tw-bg-opacity));
+}
 
 .hover\:bg-gradient-to-l:hover {
   background-image: linear-gradient(to left, var(--tw-gradient-stops));
@@ -822,8 +797,12 @@ font-family: 'Vazirmatn', sans-serif; */
     height: 100vh;
   }
 
-  .md\:w-\[30rem\] {
-    width: 30rem;
+  .md\:w-\[90\%\] {
+    width: 90%;
+  }
+
+  .md\:w-\[80\%\] {
+    width: 80%;
   }
 
   .md\:max-w-\[30rem\] {
@@ -857,14 +836,18 @@ font-family: 'Vazirmatn', sans-serif; */
     padding-bottom: 0px;
   }
 
-  .md\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
-  .md\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
+  .md\:text-\[56px\] {
+    font-size: 56px;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .md\:text-xl {
@@ -872,19 +855,18 @@ font-family: 'Vazirmatn', sans-serif; */
     line-height: 1.75rem;
   }
 
-  .md\:\[line-height\:1\.1\] {
-    line-height: 1.1;
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .md\:\[line-height\:1\.3\] {
+    line-height: 1.3;
   }
 }
 
 @media (min-width: 1024px) {
-  .lg\:max-w-\[60rem\] {
-    max-width: 60rem;
-  }
-}
-
-@media (min-width: 1280px) {
-  .xl\:h-\[90\%\] {
-    height: 90%;
+  .lg\:max-w-7xl {
+    max-width: 80rem;
   }
 }
