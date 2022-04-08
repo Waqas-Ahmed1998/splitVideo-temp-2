@@ -472,10 +472,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: relative;
 }
 
-.top-\[7\%\] {
-  top: 7%;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -845,12 +841,6 @@ font-family: 'Vazirmatn', sans-serif;*/
 @media (min-width: 319px) {
   .xs\:m-1 {
     margin: 0.25rem;
-  }
-}
-
-@media (min-width: 370px) {
-  .iphone6\:top-\[15\%\] {
-    top: 15%;
   }
 }
 
