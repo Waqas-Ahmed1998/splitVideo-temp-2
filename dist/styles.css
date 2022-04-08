@@ -522,8 +522,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: flex;
 }
 
-.h-screen {
-  height: 100vh;
+.h-\[90vh\] {
+  height: 90vh;
 }
 
 .h-6 {
@@ -870,6 +870,10 @@ font-family: 'Vazirmatn', sans-serif;*/
   .md\:mx-auto {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .md\:h-screen {
+    height: 100vh;
   }
 
   .md\:w-\[80\%\] {
