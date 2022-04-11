@@ -514,12 +514,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: block;
 }
 
-.flex {
-  display: flex;
+.inline-block {
+  display: inline-block;
 }
 
-.h-12 {
-  height: 3rem;
+.flex {
+  display: flex;
 }
 
 .h-6 {
@@ -544,10 +544,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 95%;
 }
 
-.w-12 {
-  width: 3rem;
-}
-
 .w-6 {
   width: 1.5rem;
 }
@@ -558,37 +554,33 @@ Ensure the default browser behavior of the `hidden` attribute.
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-@-webkit-keyframes bounce {
-  0%, 100% {
-    transform: translateY(-25%);
-    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
-            animation-timing-function: cubic-bezier(0.8,0,1,1);
+@-webkit-keyframes slide {
+  0% {
+    transform: translatex(0);
+    opacity: 0;
   }
 
-  50% {
-    transform: none;
-    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
-            animation-timing-function: cubic-bezier(0,0,0.2,1);
+   100% {
+    transform: translatex(7px);
+    opacity: 1;
   }
 }
 
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(-25%);
-    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
-            animation-timing-function: cubic-bezier(0.8,0,1,1);
+@keyframes slide {
+  0% {
+    transform: translatex(0);
+    opacity: 0;
   }
 
-  50% {
-    transform: none;
-    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
-            animation-timing-function: cubic-bezier(0,0,0.2,1);
+   100% {
+    transform: translatex(7px);
+    opacity: 1;
   }
 }
 
-.animate-bounce {
-  -webkit-animation: bounce 1s infinite;
-          animation: bounce 1s infinite;
+.animate-slide {
+  -webkit-animation: slide 1s ease-in-out infinite;
+          animation: slide 1s ease-in-out infinite;
 }
 
 .cursor-pointer {
@@ -611,6 +603,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -667,18 +665,23 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: transparent;
 }
 
-.bg-\[\#08c6f5\] {
+.bg-\[\#0A2132\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(8 198 245 / var(--tw-bg-opacity));
+  background-color: rgb(10 33 50 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#09191F\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(9 25 31 / var(--tw-bg-opacity));
 }
 
 .bg-transparent {
   background-color: transparent;
 }
 
-.bg-\[\#F98D00\] {
+.bg-\[\#C62A2D\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(249 141 0 / var(--tw-bg-opacity));
+  background-color: rgb(198 42 45 / var(--tw-bg-opacity));
 }
 
 .py-10 {
@@ -746,10 +749,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 500;
 }
 
-.font-extrabold {
-  font-weight: 800;
-}
-
 .font-bold {
   font-weight: 700;
 }
@@ -766,24 +765,33 @@ Ensure the default browser behavior of the `hidden` attribute.
   letter-spacing: 0.05em;
 }
 
-.text-\[\#9ee925\] {
+.text-\[\#f6f7f4\] {
   --tw-text-opacity: 1;
-  color: rgb(158 233 37 / var(--tw-text-opacity));
+  color: rgb(246 247 244 / var(--tw-text-opacity));
 }
 
-.text-\[\#040303\] {
+.text-\[\#d8dcd1\] {
   --tw-text-opacity: 1;
-  color: rgb(4 3 3 / var(--tw-text-opacity));
+  color: rgb(216 220 209 / var(--tw-text-opacity));
 }
 
-.text-\[\#090808\] {
+.text-\[\#ffffff\] {
   --tw-text-opacity: 1;
-  color: rgb(9 8 8 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-\[\#444\] {
+.text-\[\#cacdd0\] {
   --tw-text-opacity: 1;
-  color: rgb(68 68 68 / var(--tw-text-opacity));
+  color: rgb(202 205 208 / var(--tw-text-opacity));
+}
+
+.underline {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.underline-offset-1 {
+  text-underline-offset: 1px;
 }
 
 .shadow-sm {
@@ -813,7 +821,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: sans-serif;
   /* font-family: 'Vazirmatn', sans-serif; */
   /* font-family: 'Prompt', sans-serif; */
   /* font-family: 'Inter', sans-serif; */
@@ -823,7 +831,6 @@ body {
 }
 
 input {
-  font-family: 'Libre Baskerville', serif;
 }
 
 .subheading {
@@ -835,11 +842,10 @@ input {
 
 .heading {
   /* font-family: 'Libre Baskerville', serif; */
-  font-family: 'Lato', sans-serif;
 }
 
 .call{
-  font-family: 'Lato', sans-serif;
+  font-family: 'Libre Baskerville', serif;
 }
 
 .disclaimer {
@@ -873,9 +879,9 @@ font-family: 'Source Sans Pro', sans-serif;
 font-family: 'Tajawal', sans-serif;
 font-family: 'Vazirmatn', sans-serif;*/
 
-.hover\:bg-\[\#e4af59\]:hover {
+.hover\:bg-\[\#c76768\]:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(228 175 89 / var(--tw-bg-opacity));
+  background-color: rgb(199 103 104 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-gradient-to-l:hover {
@@ -917,24 +923,12 @@ font-family: 'Vazirmatn', sans-serif;*/
     width: 80%;
   }
 
-  .md\:w-\[85\%\] {
-    width: 85%;
-  }
-
-  .md\:w-fit {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+  .md\:w-\[60\%\] {
+    width: 60%;
   }
 
   .md\:max-w-\[1120px\] {
     max-width: 1120px;
-  }
-
-  .md\:scale-\[2\] {
-    --tw-scale-x: 2;
-    --tw-scale-y: 2;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .md\:scale-\[2\.5\] {
@@ -947,12 +941,6 @@ font-family: 'Vazirmatn', sans-serif;*/
     flex-direction: row;
   }
 
-  .md\:space-y-8 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(2rem * var(--tw-space-y-reverse));
-  }
-
   .md\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
@@ -961,11 +949,6 @@ font-family: 'Vazirmatn', sans-serif;*/
 
   .md\:border-2 {
     border-width: 2px;
-  }
-
-  .md\:bg-\[\#ffffff\] {
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   }
 
   .md\:p-0 {
@@ -987,13 +970,8 @@ font-family: 'Vazirmatn', sans-serif;*/
     line-height: 2rem;
   }
 
-  .md\:text-\[58px\] {
-    font-size: 58px;
-  }
-
-  .md\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+  .md\:text-\[54px\] {
+    font-size: 54px;
   }
 
   .md\:text-4xl {
