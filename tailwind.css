@@ -10,8 +10,8 @@
 body {
 
 
+  font-family: 'Libre Baskerville', serif;
 
-font-family: sans-serif;
 
 /* font-family: 'Vazirmatn', sans-serif; */
 
@@ -23,7 +23,13 @@ font-family: sans-serif;
 
 }
 
+input {
+  font-family: 'Libre Baskerville', serif;
+
+}
+
 .subheading {
+
 
 
 
@@ -46,7 +52,7 @@ input {
 }
 .disclaimer {
 
-
+font-family: sans-serif;
 
 }
 .rgba {
