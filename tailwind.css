@@ -10,7 +10,8 @@
 body {
 
 
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Lato', sans-serif;
+
 
 
 /* font-family: 'Vazirmatn', sans-serif; */
@@ -29,6 +30,10 @@ input {
 }
 
 .subheading {
+  font-family: 'Libre Baskerville', serif;
+
+
+
 
 
 
@@ -40,12 +45,14 @@ input {
 .heading {
   /* font-family: 'Libre Baskerville', serif; */
 
+  font-family: 'Lato', sans-serif;
 
 
 
 }
 .call{
 
+  font-family: 'Lato', sans-serif;
 
 
 
