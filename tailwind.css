@@ -54,12 +54,16 @@ font-family: sans-serif;
 }
 
 .video-heading {
-  font-family: 'Lato', sans-serif;
+
 
 }
 .bullet-heading {
   font-family: 'Open Sans', sans-serif;
 
+
+}
+.copy-right {
+font-family: sans-serif;
 
 }
 li {
