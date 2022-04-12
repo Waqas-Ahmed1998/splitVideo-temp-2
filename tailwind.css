@@ -23,10 +23,7 @@ font-family: sans-serif;
 
 }
 
-input {
 
-
-}
 
 .subheading {
 
@@ -45,11 +42,8 @@ input {
   font-family: 'Lato', sans-serif;
 
 
-
-
-
-
 }
+
 .disclaimer {
 
 font-family: sans-serif;
@@ -57,6 +51,19 @@ font-family: sans-serif;
 }
 .rgba {
   background-color: rgba(255, 254, 254, 0.9);
+}
+
+.video-heading {
+  font-family: 'Lato', sans-serif;
+
+}
+.bullet-heading {
+  font-family: 'Open Sans', sans-serif;
+
+
+}
+li {
+  list-style: none;
 }
 /* fonts  */
 /*font-family: 'Anton', sans-serif;
@@ -70,6 +77,7 @@ font-family: 'Libre Baskerville', serif;
 font-family: 'Lobster', cursive;
 font-family: 'Merriweather', serif;
 font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
 font-family: 'Oswald', sans-serif;
 font-family: 'Permanent Marker', cursive;
 font-family: 'Poppins', sans-serif;
