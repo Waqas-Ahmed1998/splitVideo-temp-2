@@ -31,28 +31,19 @@ input {
 .subheading {
 
 
-
-
-
-  font-family: 'Libre Baskerville', serif;
-
-
-
 }
 input {
 
 }
 .heading {
-  /* font-family: 'Libre Baskerville', serif; */
-
-
-
+  font-family: 'Ubuntu', sans-serif;
 
 
 }
 .call{
 
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Lato', sans-serif;
+
 
 
 
@@ -79,6 +70,7 @@ font-family: 'Libre Baskerville', serif;
 font-family: 'Lobster', cursive;
 font-family: 'Merriweather', serif;
 font-family: 'Montserrat', sans-serif;
+font-family: 'Oswald', sans-serif;
 font-family: 'Permanent Marker', cursive;
 font-family: 'Poppins', sans-serif;
 font-family: 'Prompt', sans-serif;
@@ -87,4 +79,5 @@ font-family: 'Rubik Bubbles', cursive;
 font-family: 'Send Flowers', cursive;
 font-family: 'Source Sans Pro', sans-serif;
 font-family: 'Tajawal', sans-serif;
+font-family: 'Ubuntu', sans-serif;
 font-family: 'Vazirmatn', sans-serif;*/

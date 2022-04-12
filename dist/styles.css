@@ -482,8 +482,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 0.25rem;
 }
 
-.mt-20 {
-  margin-top: 5rem;
+.mt-2 {
+  margin-top: 0.5rem;
 }
 
 .mb-3 {
@@ -520,6 +520,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .flex {
   display: flex;
+}
+
+.aspect-video {
+  aspect-ratio: 16 / 9;
 }
 
 .h-6 {
@@ -665,14 +669,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: transparent;
 }
 
-.bg-\[\#0A2132\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(10 33 50 / var(--tw-bg-opacity));
+.border-gray-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(107 114 128 / var(--tw-border-opacity));
 }
 
-.bg-\[\#09191F\] {
+.bg-\[\#ffffff\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(9 25 31 / var(--tw-bg-opacity));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-transparent {
@@ -682,6 +686,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-\[\#C62A2D\] {
   --tw-bg-opacity: 1;
   background-color: rgb(198 42 45 / var(--tw-bg-opacity));
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .py-10 {
@@ -745,10 +753,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 0.7rem;
 }
 
-.font-medium {
-  font-weight: 500;
-}
-
 .font-bold {
   font-weight: 700;
 }
@@ -765,9 +769,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   letter-spacing: 0.05em;
 }
 
-.text-\[\#f6f7f4\] {
+.text-\[\#E43B2C\] {
   --tw-text-opacity: 1;
-  color: rgb(246 247 244 / var(--tw-text-opacity));
+  color: rgb(228 59 44 / var(--tw-text-opacity));
+}
+
+.text-\[\#2f2f2f\] {
+  --tw-text-opacity: 1;
+  color: rgb(47 47 47 / var(--tw-text-opacity));
 }
 
 .text-\[\#d8dcd1\] {
@@ -783,6 +792,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-\[\#cacdd0\] {
   --tw-text-opacity: 1;
   color: rgb(202 205 208 / var(--tw-text-opacity));
+}
+
+.text-\[\#060606\] {
+  --tw-text-opacity: 1;
+  color: rgb(6 6 6 / var(--tw-text-opacity));
+}
+
+.text-\[\#0a0a0a\] {
+  --tw-text-opacity: 1;
+  color: rgb(10 10 10 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -834,18 +853,17 @@ input {
 }
 
 .subheading {
-  font-family: 'Libre Baskerville', serif;
 }
 
 input {
 }
 
 .heading {
-  /* font-family: 'Libre Baskerville', serif; */
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .call{
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Lato', sans-serif;
 }
 
 .disclaimer {
@@ -869,6 +887,7 @@ font-family: 'Libre Baskerville', serif;
 font-family: 'Lobster', cursive;
 font-family: 'Merriweather', serif;
 font-family: 'Montserrat', sans-serif;
+font-family: 'Oswald', sans-serif;
 font-family: 'Permanent Marker', cursive;
 font-family: 'Poppins', sans-serif;
 font-family: 'Prompt', sans-serif;
@@ -877,6 +896,7 @@ font-family: 'Rubik Bubbles', cursive;
 font-family: 'Send Flowers', cursive;
 font-family: 'Source Sans Pro', sans-serif;
 font-family: 'Tajawal', sans-serif;
+font-family: 'Ubuntu', sans-serif;
 font-family: 'Vazirmatn', sans-serif;*/
 
 .hover\:bg-\[\#c76768\]:hover {
@@ -955,6 +975,10 @@ font-family: 'Vazirmatn', sans-serif;*/
     padding: 0px;
   }
 
+  .md\:p-4 {
+    padding: 1rem;
+  }
+
   .md\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -965,13 +989,17 @@ font-family: 'Vazirmatn', sans-serif;*/
     padding-right: 2.5rem;
   }
 
-  .md\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
+  .md\:text-\[32px\] {
+    font-size: 32px;
   }
 
   .md\:text-\[54px\] {
     font-size: 54px;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .md\:text-4xl {
@@ -984,7 +1012,21 @@ font-family: 'Vazirmatn', sans-serif;*/
     line-height: 1.5rem;
   }
 
+  .md\:text-\[26px\] {
+    font-size: 26px;
+  }
+
+  .md\:text-\[48px\] {
+    font-size: 48px;
+  }
+
   .md\:leading-\[1\.2\] {
     line-height: 1.2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:p-8 {
+    padding: 2rem;
   }
 }
